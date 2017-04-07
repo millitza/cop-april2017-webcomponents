@@ -1,0 +1,30 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+
+<dom-module id="my-input">
+    <template>
+        <style>
+
+        </style>
+
+        <h1>My input element</h1>
+        <paper-input label="Type your input here" value="{{description}}"></paper-input>
+
+    </template>
+
+    <script>
+        Polymer({
+            is: 'my-input',
+            properties: {
+                description: {
+                    type: String,
+                    notify: true,
+                    observer: '_descriptionChanged'
+                }
+            },
+            _descriptionChanged: function(){
+                this.fire('description-changed',{description: this.description});
+            }
+        });
+    </script>
+</dom-module>

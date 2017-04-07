@@ -1,4 +1,5 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="./my-input.html">
 <link rel="import" href="my-output.html">
 
 <dom-module id="my-app">
@@ -9,6 +10,7 @@
 
         <h1>[[element]]</h1>
 
+        <my-input></my-input>
         <my-output input-text="[[description]]"></my-output>
 
     </template>
@@ -16,11 +18,20 @@
     <script>
         Polymer({
             is: 'my-app',
+            listeners: {
+                'description-changed': '_updateDescription'
+            },
             properties: {
                 element: {
                     type: String,
                     value: 'My first Polymer element!'
+                },
+                description: {
+                    type: String
                 }
+            },
+            _updateDescription: function(e) {
+                this.set('description',e.detail.description);
             }
         });
     </script>
