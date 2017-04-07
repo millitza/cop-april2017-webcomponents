@@ -6,5 +6,5 @@ Front end applications can be built using various frameworks. Those frameworks a
 ## Schedule
 
 ## Contact
-Ton Hordijk (ton.hordijk@capgemini.com) - 0652159371
+Ton Hordijk (ton.hordijk@capgemini.com) - 0652159371 <br />
 Millitza Kroonenberg (millitza.kroonenberg@capgemini.com) - 0625682746
