@@ -38,8 +38,10 @@ polymer --version
 </ul>
 
 # Links
-Web components: https://www.webcomponents.org/
-Polymer: https://www.polymer-project.org/
-W3C standards: https://www.w3.org/standards/
+<ul>
+<li> Web components: https://www.webcomponents.org/
+<li> Polymer: https://www.polymer-project.org/
+<li> W3C standards: https://www.w3.org/standards/
+</ul>
 ## Learning materials
 Polymer offers an interesting training kit to create your first element or application. See https://www.polymer-project.org/2.0/start/ for more information.
