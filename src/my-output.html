@@ -2,7 +2,14 @@
 <link rel="import" href="../bower_components/paper-input/paper-input.html">
 
 <dom-module id="my-output">
+    <style include="my-global-styles">
+        h1 {
+            color: #00c853;
+        }
+    </style>
     <template>
+        <h1>My output element</h1>
+
         <paper-input disabled="true" value="[[inputText]]"></paper-input>
     </template>
 
