@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+
+<dom-module id="my-output">
+    <template>
+        <paper-input disabled="true" value="[[inputText]]"></paper-input>
+    </template>
+
+    <script>
+        Polymer({
+            is: 'my-output',
+            properties: {
+                inputText: String
+            }
+        });
+    </script>
+</dom-module>

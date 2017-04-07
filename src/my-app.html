@@ -1,4 +1,5 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="my-output.html">
 
 <dom-module id="my-app">
     <template>
@@ -7,6 +8,9 @@
         </style>
 
         <h1>[[element]]</h1>
+
+        <my-output input-text="[[description]]"></my-output>
+
     </template>
 
     <script>
