@@ -1,21 +1,22 @@
 {
-    "name": "cop-app",
-    "description": "This README would normally document whatever steps are necessary to get your application up and running.",
-    "main": "index.js",
-    "authors": [
-        "Millitza Kroonenberg",
-        "Ton Hordijk"
-    ],
-    "homepage": "",
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "polymer": "^1.8.0",
-        "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
-    }
+  "name": "cop-app",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "authors": [
+    "Millitza Kroonenberg",
+    "Ton Hordijk"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^1.8.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
+    "paper-input": "PolymerElements/paper-input#^1.1.23"
+  }
 }
