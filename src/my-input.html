@@ -19,11 +19,11 @@
                 description: {
                     type: String,
                     notify: true,
-                    observer: _descriptionChanged
-                },
-                _descriptionChanged: function(){
-                    this.fire('description-changed',{description: this.description});
+                    observer: '_descriptionChanged'
                 }
+            },
+            _descriptionChanged: function(){
+                this.fire('description-changed',{description: this.description});
             }
         });
     </script>

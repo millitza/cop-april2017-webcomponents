@@ -8,7 +8,6 @@
         </style>
 
         <h1>[[element]]</h1>
-        <span>description</span>
 
         <my-input></my-input>
     </template>
@@ -26,10 +25,10 @@
                 },
                 description: {
                     type: String
-                },
-                _updateDescription: function(e) {
-                    this.set('description',e.detail.description);
                 }
+            },
+            _updateDescription: function(e) {
+                this.set('description',e.detail.description);
             }
         });
     </script>
