@@ -1,0 +1,34 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+
+<dom-module id="my-magic-button">
+    <template>
+        <iron-ajax id="ajaxCall"
+            url="../data.json"
+            on-response="handleResponse"
+        ></iron-ajax>
+
+        <paper-button on-tap="_buttonClicked">Button</paper-button>
+
+        <pre>
+            [[data]]
+        </pre>
+    </template>
+
+    <script>
+        Polymer({
+            is: 'my-magic-button',
+            properties: {
+                data: String
+            },
+            _buttonClicked: function(){
+                this.$.ajaxCall.generateRequest();
+            },
+            handleResponse: function(e){
+                this.set('data', e.detail.response.blaat);
+            }
+        });
+    </script>
+
+</dom-module>
