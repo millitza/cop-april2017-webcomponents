@@ -1,23 +1,31 @@
-<link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="./my-global-styles.html">
 
 <dom-module id="my-output">
     <style include="my-global-styles">
+        :host {
+            width: 400px;
+            float: left;
+            border: 1px solid #000;
+            padding: 10px;
+        }
         h1 {
-            color: #00c853;
+            color: red;
         }
     </style>
-    <template>
-        <h1>My output element</h1>
 
-        <paper-input disabled="true" value="[[inputText]]"></paper-input>
+    <template>
+        <h1>Output element</h1>
+        <paper-input disabled value="[[description]]"></paper-input>
     </template>
 
     <script>
         Polymer({
-            is: 'my-output',
+            is: "my-output",
             properties: {
-                inputText: String
+                description: {
+                    type: String
+                }
             }
         });
     </script>

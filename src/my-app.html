@@ -1,35 +1,33 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="./my-input.html">
 <link rel="import" href="./my-output.html">
-<link rel="import" href="./my-magic-button.html">
 <link rel="import" href="./my-global-styles.html">
+<link rel="import" href="./my-magic-button.html">
 
 <dom-module id="my-app">
+    <style include="my-global-styles"></style>
+
     <template>
-        <style include="my-global-styles"></style>
-
-        <h1>My first Polymer element</h1>
-
+        <h1>My nice app</h1>
         <my-input></my-input>
-        <hr />
-        <my-output input-text="[[description]]"></my-output>
-        <hr />
+        <my-output description="[[data]]"></my-output>
+
         <my-magic-button></my-magic-button>
     </template>
 
     <script>
         Polymer({
-            is: 'my-app',
-            listeners: {
-                'changeInData': '_updateDescription'
-            },
+            is: "my-app",
             properties: {
-                description: {
+                data: {
                     type: String
                 }
             },
-            _updateDescription: function(e) {
-                this.set('description', e.detail.description);
+            listeners: {
+                'description-changed': '_descriptionChanged'
+            },
+            _descriptionChanged: function(e){
+                this.set('data', e.detail.description);
             }
         });
     </script>

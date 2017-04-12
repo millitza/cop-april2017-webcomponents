@@ -3,26 +3,32 @@
 <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 
 <dom-module id="my-magic-button">
+    <style>
+        paper-button {
+            background-color: orange;
+        }
+    </style>
     <template>
         <iron-ajax id="ajaxCall"
-            url="../data.json"
-            on-response="handleResponse"
+                   url="../data.json"
+                   on-response="blaat"
         ></iron-ajax>
 
-        <paper-button on-tap="_buttonClicked">Button</paper-button>
+        <paper-button on-tap="_buttonTapped">Oppan Gangnam</paper-button>
 
         <pre>
             [[data]]
         </pre>
     </template>
-
     <script>
         Polymer({
-            is: 'my-magic-button',
+            is: "my-magic-button",
             properties: {
-                data: String
+                data: {
+                    type: String
+                }
             },
-            _buttonClicked: function(){
+            _buttonTapped: function(){
                 this.$.ajaxCall.generateRequest();
             },
             handleResponse: function(e){
@@ -30,5 +36,4 @@
             }
         });
     </script>
-
 </dom-module>
