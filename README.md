@@ -4,7 +4,9 @@ Repository for participants in the web components (Polymer) meeting of the CoP H
 # Meeting April 12, 2017
 Front end applications can be built using various frameworks. Those frameworks are often out of date before you had the opportunity to use them in your project and are sometimes characterized by major changes between versions. Additionally, performance can be an issue when using a large framework in your application. Recently, web components have gained attention as they comply with the new W3C standards. This makes front end development using web components more durable and requires little framework specific knowledge. Tonight, we would like to introduce you to web components using the light weight Polymer library and guide you in your first steps into the amazing world of web components.
 ## Schedule
-
+18.30 - 18.40: Presentation <br />
+18.40 - 19.00: Code example <br />
+19.00 - later: Create your own web components
 ## Contact
 Ton Hordijk (ton.hordijk@capgemini.com) - 0652159371 <br />
 Millitza Kroonenberg (millitza.kroonenberg@capgemini.com) - 0625682746
@@ -31,9 +33,9 @@ polymer --version
 <ul>
 <li> Create a new folder for your project in this repository.
 <li> Copy the index.html file from the example application to your folder.
-<li> In your folder, create a new element with ```polymer init element```.
+<li> In your folder, create a new (app) element ('polymer init element' may be helpful).
 <li> Include the element in the index.html file.
-<li> View your first element in a browser by running ```polymer serve```.
+<li> View your first element in a browser by running 'polymer serve'.
 <li> Edit your element and include other elements from other participants or webcomponents.org. 
 </ul>
 
@@ -45,4 +47,4 @@ polymer --version
 </ul>
 
 ## Learning materials
-Polymer offers an interesting training kit to create your first element or application. See https://www.polymer-project.org/2.0/start/ for more information.
+Polymer offers an interesting training kit to create your first element or application. See https://www.polymer-project.org/1.0/start/ for more information.
