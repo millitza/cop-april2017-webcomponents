@@ -8,7 +8,7 @@
     <template>
         <style include="my-global-styles"></style>
 
-        <h1>[[element]]</h1>
+        <h1>My first Polymer element</h1>
 
         <my-input></my-input>
         <hr />
@@ -21,19 +21,15 @@
         Polymer({
             is: 'my-app',
             listeners: {
-                'description-changed': '_updateDescription'
+                'changeInData': '_updateDescription'
             },
             properties: {
-                element: {
-                    type: String,
-                    value: 'My first Polymer element!'
-                },
                 description: {
                     type: String
                 }
             },
             _updateDescription: function(e) {
-                this.set('description',e.detail.description);
+                this.set('description', e.detail.description);
             }
         });
     </script>
